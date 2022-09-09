@@ -1,11 +1,12 @@
 let cardCon = document.getElementById("cardCon");
 
 let xhr = new XMLHttpRequest();
-// xhr.open("GET", `news.json`, "true");
-const k = `apiKey=6774a7a88fc0411c996360a4d2bea4a8`;
+xhr.open("GET", `news.json`, "true");
 //You have to enter News api URL for getting latest news
-URL = `https://newsapi.org/v2/top-headlines?country=in&${k}`;
-xhr.open("GET", `${URL}`, "true");
+
+// const k = `apiKey= `;
+// URL = `https://newsapi.org/v2/top-headlines?country=in&${k}`;
+// xhr.open("GET", `${URL}`, "true");
 
 xhr.onload = function () {
   if (this.status === 200) {
