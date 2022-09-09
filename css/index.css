@@ -17,7 +17,7 @@ body {
   /* height: 690px; */
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url(util/header.jpg);
+    url("./util/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@ body {
   -webkit-text-stroke: 1px rgb(244, 213, 13);
 }
 .logo-box p:hover {
-  background: url(util/ba.png);
+  background: url("util/ba.png");
   -webkit-background-clip: text;
   background-size: 250%;
   background-position: 0 0;
