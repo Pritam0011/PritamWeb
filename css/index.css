@@ -17,7 +17,7 @@ body {
   /* height: 690px; */
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url("https://github.com/Pritam0011/PritamWeb/blob/master/util/header.jpg");
+    url(../util/header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
