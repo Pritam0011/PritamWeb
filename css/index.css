@@ -662,8 +662,8 @@ textarea {
   position: relative;
 }
 .input-group label {
-  flex-basis: 32%;
-  font-weight: 600;
+  flex-basis: 25%;
+  font-weight: 700;
   margin-left: 20px;
 }
 .input-group input,
