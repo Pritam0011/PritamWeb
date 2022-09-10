@@ -30,7 +30,7 @@ body {
   color: #fff;
   position: absolute;
   margin-left: 32px;
-  padding-top: 1.7rem;
+  padding-top: 1.3rem;
   position: absolute;
   margin-top: -56.25%;
 }
@@ -39,6 +39,15 @@ body {
   letter-spacing: 0.2rem;
   color: transparent;
   -webkit-text-stroke: 1px rgb(244, 213, 13);
+}
+@media (max-width: 600px) {
+  .logo-box {
+    margin-left: 20px;
+    padding-top: 1rem;
+  }
+  .logo-box p {
+    font-size: 0.7rem;
+  }
 }
 .logo-box p:hover {
   background: url(../util/ba.png);
@@ -325,33 +334,19 @@ nav {
   font-weight: bolder;
 }
 
-.ab-title h1 {
-  position: relative;
-  color: yellow;
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
-}
-.ab-title h1::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -12px;
-  width: 60px;
-  height: 2px;
-  background-color: red;
-}
 .ab-text {
   width: 46vw;
   margin-left: 7vw;
 }
 .ab-text h2 {
   color: yellow;
-  font-size: 5vw;
+  font-size: 6vw;
   text-transform: capitalize;
-  margin-bottom: 2vw;
+  margin-bottom: 5vw;
   font-weight: bolder;
+}
+.ab-text h2 span {
+  color: #d65364;
 }
 .ab-text h5 {
   color: rgb(222, 188, 15);
@@ -389,12 +384,7 @@ nav {
   border-radius: 100%;
   width: 26vw;
   height: 26vw;
-  background: linear-gradient(
-    to right,
-    rgb(249, 249, 150),
-    #d65364 /* rgb(117, 117, 214), */ /* rgb(88, 236, 234), */
-      /* rgb(226, 178, 90), */ /* rgb(238, 130, 238) */
-  );
+  background: linear-gradient(to right, rgb(249, 249, 150), #d65364);
   overflow: hidden;
   z-index: 2;
   box-shadow: 0 0 5px #444;
@@ -437,7 +427,7 @@ nav {
     bottom: 7px;
     left: 7px;
     right: 7px;
-    transform: rotate(-280deg);
+    transform: rotate(-360deg);
   }
   #pic img {
     width: 100%;
@@ -607,7 +597,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   bottom: -12px;
-  width: 60px;
+  width: 70px;
   height: 2px;
   background-color: red;
 }
@@ -645,8 +635,8 @@ textarea {
 
 .container-con form {
   width: 90%;
-  max-width: 500px;
-  padding: 40px 30px 20px;
+  max-width: 600px;
+  padding: 40px 15px 30px 30px;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
@@ -668,21 +658,22 @@ textarea {
   width: 100%;
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 20px 0 0;
   position: relative;
 }
 .input-group label {
-  flex-basis: 28%;
+  flex-basis: 32%;
   font-weight: 600;
+  margin-left: 20px;
 }
 .input-group input,
 .input-group textarea {
   width: 100%;
-  flex-basis: 68%;
+  flex-basis: 60%;
   background: transparent;
   border: 0;
   outline: 0;
-  padding: 10px 0;
+  padding: 10px;
   border-bottom: 1px solid #999;
   color: #333;
   font-size: 16px;
@@ -694,11 +685,24 @@ textarea {
   padding-left: 35%;
 }
 @media (max-width: 530px) {
+  .input-group input,
+  .input-group textarea {
+    flex-basis: 95%;
+  }
   .input-group label {
-    flex-basis: 50%;
+    flex-basis: 130%;
+    margin-left: 0;
   }
   .btn-sub {
     padding-left: 25%;
+  }
+  /* .container-con form {
+    padding-left: 30px;
+  } */
+}
+@media (max-width: 400px) {
+  .btn-sub {
+    padding-left: 6%;
   }
 }
 
@@ -876,6 +880,24 @@ textarea {
 }
 
 /* footer  */
+
+.ab-title h1 {
+  position: relative;
+  color: yellow;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.ab-title h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  width: 60px;
+  height: 2px;
+  background-color: red;
+}
 .copyright {
   color: yellow;
   background: #000;
