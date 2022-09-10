@@ -62,10 +62,10 @@ function validatePhone() {
     return false;
   }
   if (phone.length !== 10) {
-    phoneError.innerHTML = "Phone Number should be 10 digits...";
+    // phoneError.innerHTML = "";
     return false;
   }
-  if (!phone.match(/^[0-9]{10}$/)) {
+  if (!phone.match(/^\d{10}$/)) {
     phoneError.innerHTML = "Only digits allowed...";
     return false;
   }

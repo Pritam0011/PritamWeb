@@ -147,33 +147,33 @@
     <section id="contact">
         <div class="con-title outline"><h1>Contact</h1></div>
         <div class="contactn">
-          <div class="container">
+          <div class="container-con">
             <form name="contact-form" action="https://formspree.io/f/mrgdeoal"
             method="POST">
                
               <i class="fa-solid fa-file-signature f"></i>
               <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" name="Full Name" placeholder="Enter your name" id="contact-name" onkeyup="validateName();">
+                <input type="text" name="Full Name" placeholder="Enter your name" required id="contact-name" autocomplete="off" onkeyup="validateName();">
                 <span id="name-error"></span>
               </div>
        
               <div class="input-group">
                 <label>Phone No.</label>
-                <input type="tel" placeholder="123 456 7890" name="Phone No." id="contact-phone" onkeyup="validatePhone();">
+                <input type="tel" placeholder="123 456 7890" name="Phone No." required id="contact-phone" maxlength="10" minlength="10" autocomplete="off" onkeyup="validatePhone();">
                 <span id="phone-error"></span>
               </div>
         
               <div class="input-group">
                 <label>Email Id</label>
-                <input type="email" placeholder="Enter Email" name="Email" id="contact-email" onkeyup="validateEmail();">
+                <input type="email" placeholder="Enter Email" name="Email" required id="contact-email" autocomplete="off" onkeyup="validateEmail();">
                 <span id="email-error"></span>
 
               </div>   
         
               <div class="input-group">
-                <label>Your Message</label>
-                <textarea rows="5" placeholder="Enter your message" name="Message" id="contact-message" onkeyup="validateMessage();"></textarea>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Enter your message" name="Message" required id="contact-message" onkeyup="validateMessage();"></textarea>
                 <span id="message-error"></span>
 
               </div>
@@ -222,9 +222,6 @@
           >
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <!-- <a href="#" class="social-buttons__button social-button social-button--snapchat" aria-label="SnapChat">
-            <i class="fab fa-snapchat-ghost"></i>
-          </a> -->
           <a
             href="https://github.com/Pritam0011"
             class="social-buttons__button social-button social-button--github"
@@ -232,9 +229,6 @@
           >
             <i class="fab fa-github"></i>
           </a>
-          <!-- <a href="#" class="social-buttons__button social-button social-button--codepen" aria-label="CodePen">
-            <i class="fab fa-codepen"></i>
-          </a> -->
         </div>
       </div>
     </section>
