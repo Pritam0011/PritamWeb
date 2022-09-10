@@ -48,8 +48,8 @@ function validateName() {
     nameError.innerHTML = "Name is required...";
     return false;
   }
-  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-    nameError.innerHTML = "Write full name...";
+  if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)) {
+    nameError.innerHTML = "Invalid name given...";
     return false;
   }
   nameError.innerHTML = `<i class="fas fa-check-circle"></i>`;
