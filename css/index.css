@@ -415,6 +415,7 @@ nav {
   border-radius: 100%;
   width: 26vw;
   height: 26vw;
+  top: 50%;
   background: linear-gradient(to right, rgb(249, 249, 150), #d65364);
   overflow: hidden;
   z-index: 2;
@@ -449,6 +450,10 @@ nav {
   z-index: 1;
 }
 @media (max-width: 685px) {
+  #pic {
+    /* top: 30%; */
+    margin-bottom: 100%;
+  }
   #pic:hover {
     box-shadow: 0 0 25px rgb(244, 240, 240);
     transform: rotate(360deg);
@@ -478,6 +483,14 @@ nav {
     z-index: 1;
   }
 }
+
+@media (max-width: 500px) {
+  #pic {
+    padding-bottom: 120px;
+    padding-left: 120px;
+  }
+}
+
 /* download cv  */
 .download-btn a {
   background: none;
@@ -807,9 +820,6 @@ input[type="checkbox"]:checked + label {
   .con-sec::before {
     transform: translate(-200px, -180px);
   }
-  .con-sec::after {
-    transform: translate(120px, 180px);
-  }
   .contactn {
     padding: 20px;
   }
@@ -818,6 +828,21 @@ input[type="checkbox"]:checked + label {
   }
   .scroll-btn {
     right: 10px;
+  }
+}
+@media (max-width: 1160px) {
+  .con-sec::after {
+    transform: translate(120px, 180px);
+  }
+}
+@media (max-width: 591px) {
+  .con-sec::after {
+    transform: translate(10px, 180px);
+  }
+}
+@media (max-width: 373px) {
+  .con-sec::after {
+    transform: translate(-70px, 220px);
   }
 }
 
@@ -923,6 +948,23 @@ input[type="checkbox"]:checked + label {
   }
   .social-button i {
     font-size: 20px;
+  }
+}
+@media (max-width: 413px) {
+  .social-button {
+    width: 30px;
+    height: 30px;
+  }
+  .social-button i {
+    padding-left: 80px;
+    font-size: 5px;
+  }
+}
+@media (max-width: 413px) {
+  .social-button i {
+    /* padding-left: 80px;
+    padding-right: 10px; */
+    float: left;
   }
 }
 .social-button::after {
