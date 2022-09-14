@@ -20,6 +20,7 @@
   </head>
   <body>
     <div id="preloader"></div>
+    <button class="scroll-btn" onclick="topFunction()" id="myBtn"><i class="fas fa-angle-up"></i></button>
     <div class="containerc">
 
     <!-- header  -->
@@ -66,7 +67,7 @@
           <div class="text-box">
             <h1><span class="type"> </span></h1>
           </div>
-          <div class="headl"></div>
+          <!-- <div class="headl"></div> -->
         </nav>
       </div>
     </div>
@@ -75,7 +76,6 @@
 </section>
     <!-- about  -->
     <section class="ab-sec" id="about">
-      <!-- <div class="ab-title outline"><h1>About Me</h1></div> -->
       <div class="main">
         <div class="picd">
           <div id="pic"></div>
@@ -84,8 +84,37 @@
           <h2>About <span>Me</span></h2>
           <h5>Pritam Samanta</h5>
           <p class="text-muted">
-            I am a web developer & designer. I am a student of MIDNAPORE COLLEGE(AUTONOMOUS). I can handle front-end and back-end both sides perfectly. <br> I also make the website more & more interactive with web animations.
-          </p>
+            I am a <b><span class="typeab"></span></b>. Also i am a CSc. student of <br> MIDNAPORE COLLEGE(AUTONOMOUS). I can handle front-end and back-end both sides perfectly. <br>I also make the website more & more interactive with web animations.
+          </p><br><div class="download-btn">
+            <a href="#" target="_blank">Download CV</a>
+            </div><br>
+
+            <div class="container-social">
+              <div class="social-buttons">
+                <a
+                  href="https://www.facebook.com/pritam.samanta.528316"
+                  class="social-buttons__button social-button social-button--facebook"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/pritam-samanta-932990249/"
+                  class="social-buttons__button social-button social-button--linkedin"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/Pritam0011"
+                  class="social-buttons__button social-button social-button--github"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+
         </div>
       </div>
     </section>
@@ -144,43 +173,43 @@
 
     <!-- contact  -->
 
-    <section id="contact">
-        <div class="con-title outline"><h1>Contact Me</h1></div>
+    <section id="contact" class="con-sec">
         <div class="contactn">
-          <div class="container-con">
-            <form name="contact-form" action="https://formspree.io/f/mrgdeoal"
+          <div class="con-title outline"><h2>Contact Me</h2></div>
+          <form name="contact-form" action="https://formspree.io/f/mrgdeoal"
             method="POST">
-               
-              <i class="fa-solid fa-file-signature f"></i>
-              <div class="input-group">
-                <label>Full Name</label>
-                <input type="text" name="Full Name" placeholder="Enter your name" required id="contact-name" autocomplete="off" onkeyup="validateName();">
+          <div class=" input-container">
+            <div class="col-prop">
+              <div class="styled-input wide input-group">
+                <input type="text" name="Full Name"  required id="contact-name" autocomplete="off" onkeyup="validateName();">
                 <span id="name-error"></span>
+                <label>Name</label> 
               </div>
-       
-              <div class="input-group">
-                <label>Phone No.</label>
-                <input type="tel" placeholder="123 456 7890" name="Phone No." required id="contact-phone" maxlength="10" minlength="10" autocomplete="off" onkeyup="validatePhone();">
-                <span id="phone-error"></span>
-              </div>
-        
-              <div class="input-group">
-                <label>Email Id</label>
-                <input type="email" placeholder="Enter Email" name="Email" required id="contact-email" autocomplete="off" onkeyup="validateEmail();">
+            </div>
+            <div class="col-midd ">
+              <div class="styled-input input-group">
+                <input type="email"  name="Email" required id="contact-email" autocomplete="off" onkeyup="validateEmail();">
                 <span id="email-error"></span>
-
-              </div>   
-        
-              <div class="input-group">
-                <label>Message</label>
-                <textarea rows="5" placeholder="Enter your message" name="Message" required id="contact-message" onkeyup="validateMessage();"></textarea>
-                <span id="message-error"></span>
-
+                <label>Email</label> 
               </div>
-        
-            <div class="btn-sub">
-            <button
-                class="btn btn-primary send-button"
+            </div>
+            <div class="col-midd ">
+              <div class="styled-input input-group" style="float:right;">
+                <input type="tel"  name="Phone No." required id="contact-phone" maxlength="10" minlength="10" autocomplete="off" onkeyup="validatePhone();">
+                <span id="phone-error"></span>
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="col-prop">
+              <div class="styled-input wide input-group">
+                <textarea rows="5"  name="Message" required id="contact-message" onkeyup="validateMessage();"></textarea>
+                <span id="message-error"></span>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-prop">
+              <button
+                class="btn-lrg submit-btnn "
                 id="submit"
                 type="submit"
                 value="SEND"
@@ -188,27 +217,24 @@
               >
                 <div class="alt-send-button">
                   <i class="fa fa-paper-plane"></i
-                  ><span class="send-text">SEND</span>
+                  >
+                  <span class="send-text">SEND</span>
                 </div>
               </button>
               <span id="submit-error"></span>
-
-            </div> 
-
-          </form> 
+            </div>
           </div>
-       </div>
+          </form>
           </div>
-        </div>
       </section>
       <br>
 
 
     <!-- social -->
 
-    <section id="social">
-      <div class="ab-title outline"><h1>Socials</h1></div>
-      <div class="container-social">
+    <!-- <section id="social">
+      <div class="ab-title outline"><h1>Socials</h1></div> -->
+      <!-- <div class="container-social">
         <div class="social-buttons">
           <a
             href="https://www.facebook.com/pritam.samanta.528316"
@@ -232,7 +258,7 @@
             <i class="fab fa-github"></i>
           </a>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- copyright  -->
