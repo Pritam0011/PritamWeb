@@ -78,7 +78,7 @@ body {
     font-size: 0.7rem;
   }
 }
-.logo-box p:hover {
+.logo-box p {
   background: url(../util/ba.png);
   -webkit-background-clip: text;
   background-size: 250%;
