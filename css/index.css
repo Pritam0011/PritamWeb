@@ -402,10 +402,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* grid-template-rows: auto auto; */
 }
 .picd {
   text-align: center;
-  padding: 8em 0;
+  padding: 2em 0;
 }
 #pic {
   transition-duration: 0.3s;
@@ -914,7 +915,9 @@ input[type="checkbox"]:checked + label {
 
 .container-social {
   background-color: #000;
-  padding: 50px 20px 20px 20px;
+  padding: 5px 35px 35px 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .social-buttons {
@@ -950,7 +953,7 @@ input[type="checkbox"]:checked + label {
     font-size: 20px;
   }
 }
-@media (max-width: 413px) {
+/* @media (max-width: 413px) {
   .social-button {
     width: 30px;
     height: 30px;
@@ -959,14 +962,14 @@ input[type="checkbox"]:checked + label {
     padding-left: 80px;
     font-size: 5px;
   }
-}
-@media (max-width: 413px) {
-  .social-button i {
-    /* padding-left: 80px;
+} */
+/* @media (max-width: 413px) {
+  .social-button i { */
+/* padding-left: 80px;
     padding-right: 10px; */
-    float: left;
-  }
-}
+/* float: left;
+  } 
+}*/
 .social-button::after {
   content: "";
   position: absolute;
