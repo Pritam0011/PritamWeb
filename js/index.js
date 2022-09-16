@@ -87,7 +87,7 @@ function validateName() {
     nameError.innerHTML = "Name is required...";
     return false;
   }
-  if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)) {
+  if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+.$/)) {
     nameError.innerHTML = "Invalid name given...";
     return false;
   }
