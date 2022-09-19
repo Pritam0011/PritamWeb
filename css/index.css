@@ -522,12 +522,13 @@ nav {
   /* padding: 10vh; */
   background-color: white;
   padding-bottom: 2vh;
+  /* font-family: "Poppins", sans-serif; */
 }
 .app-title {
   width: 100%;
   text-align: center;
   font-weight: bolder;
-  padding: 30px;
+  padding: 0 30px 30px;
 }
 .app-title h1 {
   position: relative;
