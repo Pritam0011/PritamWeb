@@ -1,0 +1,60 @@
+
+    <!-- contact  -->
+
+    <section id="contact" class="con-sec">
+        <div class="contactn">
+          <div class="con-title outline"><h2>Contact Me</h2></div>
+          <form name="contact-form" action="https://formspree.io/f/mrgdeoal"
+            method="POST">
+          <div class=" input-container">
+            <div class="col-prop">
+              <div class="styled-input wide input-group">
+                <input type="text" name="Full Name"  required id="contact-name" autocomplete="off" onkeyup="validateName();">
+                <span id="name-error"></span>
+                <label>Name</label> 
+              </div>
+            </div>
+            <div class="col-midd ">
+              <div class="styled-input input-group">
+                <input type="email"  name="Email" required id="contact-email" autocomplete="off" onkeyup="validateEmail();">
+                <span id="email-error"></span>
+                <label>Email</label> 
+              </div>
+            </div>
+            <div class="col-midd ">
+              <div class="styled-input input-group" style="float:right;">
+                <input type="tel"  name="Phone No." required id="contact-phone" maxlength="10" minlength="10" autocomplete="off" onkeyup="validatePhone();">
+                <span id="phone-error"></span>
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="col-prop">
+              <div class="styled-input wide input-group">
+                <textarea rows="5"  name="Message" required id="contact-message" onkeyup="validateMessage();"></textarea>
+                <span id="message-error"></span>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-prop">
+              <button
+                class="btn-lrg submit-btnn "
+                id="submit"
+                type="submit"
+                value="SEND"
+                onclick="return validateForm()"
+              >
+                <div class="alt-send-button">
+                  <i class="fa fa-paper-plane"></i
+                  >
+                  <span class="send-text">SEND</span>
+                </div>
+              </button>
+              <span id="submit-error"></span>
+            </div>
+          </div>
+          </form>
+          </div>
+      </section>
+<div style="width: 100%;height: 1.875rem;background-color: #001923;"></div>
+
+<%- include("social.ejs") %>

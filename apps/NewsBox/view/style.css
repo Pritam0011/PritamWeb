@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background: #333; */
+  background-color: #333 !important;
+}
+/* animate */
+#preloader {
+  background: #000 url(/load.gif) no-repeat center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 20000;
+}
+
+img {
+  max-width: 100%;
+  border-radius: .4375rem;
+  transition: all 1s;
+}
+
+.scroll-btn {
+  position: fixed;
+  height: 2.8125rem;
+  width: 2.625rem;
+  background: #e91e63;
+  border: .0625rem solid crimson;
+  right: 1.875rem; 
+  bottom: 1.875rem;
+  text-align: center;
+  line-height: 2.8125rem;
+  color: #fff;
+  z-index: 10000;
+  font-size: 1.875rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  opacity: 0.9;
+  display: none;
+  /* pointer-events: none; */
+  transition: all 0.3s ease;
+}
+.scroll-btn:hover {
+  border: .125rem solid yellow;
+}
+.scroll-btn:active {
+  background: #bc0240;
+  border: .0625rem solid rgb(249, 249, 200);
+}
+@media (max-width: 48rem) {
+  .scroll-btn {
+    right: .625rem;
+  }
+}
+
+.onHover:hover {
+  border-bottom: .2813rem solid yellow;
+  border-top: .375rem solid yellow;
+  /* border: .1875rem solid yellow; */
+  transform: translateY(-0.1875rem) scale(1.01);
+}
+.onHover:hover img {
+  transform: translateY(-0.3125rem) scale(1.02);
+  box-shadow: .9375rem .9375rem 1.6875rem -1.25rem rgba(0, 0, 0, 0.38);
+  z-index: 500;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+.news-container {
+  margin-bottom: 4.3125rem;
+  padding: 0 16px;
+  padding-top: 1.25rem;
+}
+.news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  grid-gap: 1rem;
+}
+.newsbx {
+  transition: all 0.3s;
+  text-decoration: none;
+  color: rgb(29, 25, 25);
+
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: .9375rem;
+}
+
+.newsbx:hover {
+  text-decoration: none;
+  color: rgb(29, 25, 25);
+  box-shadow: 0 .1875rem .1875rem rgba(0, 0, 0, 0.16), 0 .1875rem .1875rem rgba(0, 0, 0, 0.23);
+}
+
+/* footer  */
+.copyright {
+  color: yellow;
+  background: #000;
+  text-align: center;
+  padding: .625rem;
+  /* border-top: .0625rem solid yellow; */
+}
+.copyright p {
+  margin: 0;
+  font-size: .9375rem;
+}

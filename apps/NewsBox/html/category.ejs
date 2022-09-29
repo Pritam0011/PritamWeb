@@ -1,0 +1,32 @@
+<%- include("top.ejs") %>
+
+<body>
+  <div class="row m-3" id="newsType" style="color: white">
+    <h2><%=cate%></h2>
+  </div>
+  <div class="news-container">
+    <div class="news">
+      <% articles.forEach(function(article,index){ %> <% if ((typeof
+      article.url=='object') || (typeof article.title=='object') || (typeof
+      article.urlToImage=='object') || (typeof article.content=='object')){ %>
+      <% } else{ %>
+      <a href="<%- article.url %>" target="_blank" class="newsbx onHover">
+        <img src="<%- article.urlToImage %>" alt="Image" />
+        <h3><%- article.title %></h3>
+
+        <p>
+          Updated:
+          <span style="color: red"
+            ><%- new Date(article.publishedAt.slice(0,10)).toDateString() %> <%-
+            moment.utc(article.publishedAt).local().format('hh : mm A') %>
+          </span>
+        </p>
+
+        <p><%- article.content.replace(/<[^>]+>/g, '') %></p>
+      </a>
+      <% } %> <% }) %>
+    </div>
+  </div>
+
+  <%- include("bottom.ejs") %>
+</body>

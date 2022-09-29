@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+.gl_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gl_container a {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  padding: 15px 30px;
+  text-decoration: none;
+  border: 2px solid black;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: red;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.gl_container a:hover {
+  color: #000;
+  transition-delay: 1.5s;
+  box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 40px yellow, 0 0 80px yellow,
+    0 0 160px yellow;
+}
+.gl_container a span {
+  position: relative;
+  z-index: 100;
+}
+
+.gl_container a::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: yellow;
+  box-shadow: 5px -8px 0 yellow, 5px 8px 0 yellow;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.gl_container a:hover::before {
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0 0 yellow, 5px 0 0 yellow;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.gl_container a::after {
+  content: "";
+  position: absolute;
+  right: -20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: yellow;
+  box-shadow: -5px -8px 0 yellow, -5px 8px 0 yellow;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.gl_container a:hover::after {
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0 0 yellow, -5px 0 0 yellow;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
