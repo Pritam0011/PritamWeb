@@ -15,7 +15,7 @@ Rou.get("/notes", async (req, res) => {
 });
 
 Rou.get("/qrgen", async (req, res) => {
-	let filePath=path.join(__dirname,'../apps/qrGen/qrgen.html')
+	let filePath=path.join(__dirname,'../apps/QrGen/qrgen.html')
 	res.sendFile(filePath);
 });
 
