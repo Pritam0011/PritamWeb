@@ -15,12 +15,8 @@ Rou.get("/notes", async (req, res) => {
 });
 
 Rou.get("/qrgen", async (req, res) => {
-	
+	let filePath=path.join(__dirname,'../apps/QrGen/index.html')
+	res.sendFile(filePath);
 });
-
-// Rou.get("/pwchat", async (req, res) => {
-// 	res.links('https://live-pwchat.herokuapp.com/');
-// 	res.links(links)
-// });
 
 module.exports = Rou;
