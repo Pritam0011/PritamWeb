@@ -80,7 +80,7 @@ body {
   }
 }
 .logo-box p {
-  background: url(../util/ba.png);
+  background: url(../util/ba.webP);
   -webkit-background-clip: text;
   background-size: 250%;
   background-position: 0 0;
@@ -223,7 +223,7 @@ body {
   height: 35px;
   border-radius: 12px;
   opacity: 40%;
-  background: #fff url(../util/menu.png);
+  background: #fff url(../util/menu.webP);
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -231,7 +231,7 @@ body {
   z-index: 2000;
 }
 .toggle.active {
-  background: #fff url(../util/close.png);
+  background: #fff url(../util/close.webP);
   transition: ease-out 0.7s;
   background-size: 25px;
   background-position: center;
@@ -334,7 +334,7 @@ nav {
   position: absolute;
   color: transparent;
   -webkit-text-stroke: 1px rgb(240, 249, 251);
-  background: url(../util/ba.png);
+  background: url(../util/ba.webP);
   background-size: 250%;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -446,7 +446,7 @@ nav {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: url(../util/pic.png) center center;
+  background: url(../util/pic.webP) center center;
   background-size: cover;
   border-radius: 100%;
   z-index: 1;
@@ -479,7 +479,7 @@ nav {
     left: 5px;
     right: 5px;
     bottom: 5px;
-    background: url(../util/pic.png) center center;
+    background: url(../util/pic.webP) center center;
     background-size: cover;
     border-radius: 100%;
     z-index: 1;
