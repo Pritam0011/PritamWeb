@@ -153,10 +153,10 @@ function validateForm() {
 
 // Animation
 /* Getting the element with the id of preloader and assigning it to the variable loader. */
-const loader = document.getElementById("preloader");
+// const loader = document.getElementById("preloader");
 // window.addEventListener("load", function () {
 //   loader.style.display = "none";
 // });
-function ploff() {
-  loader.style.display = "none";
-}
+// function ploff() {
+//   loader.style.display = "none";
+// }
