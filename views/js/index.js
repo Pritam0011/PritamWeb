@@ -1,3 +1,12 @@
+function blurtoggle(){
+  const blurtog=document.getElementsByClassName('blurtog');
+  for(let i=0;i<blurtog.length;i++){
+    blurtog[i].classList.toggle('active')
+  }
+  const blurpop=document.getElementById('blur-pop');
+  blurpop.classList.toggle('active')
+}
+
 // Get the button
 let mybutton = document.getElementById("myBtn");
 

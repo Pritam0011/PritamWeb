@@ -14,6 +14,52 @@ body {
   /* background-color: #fff !important; */
   overflow-x: hidden !important;
 }
+.blurtog.active{
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+#blur-pop{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 600px;
+  margin: 20px;
+  padding: 3.125rem;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.30);
+  background: #fff;
+  z-index: 10000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: .9375rem;
+}
+#blur-pop .btn{
+  color: black;
+  font-weight: 500;
+}
+#blur-pop .btn:hover{
+  color: white;
+  transition: all .25s ease-in-out;
+}
+#blur-pop .btn:active{
+  background-color: #b30303;
+}
+#blur-pop.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+@media screen and (max-width:900px) {
+  #blur-pop{
+    width: 320px;
+  transform: translate(-55%,-50%);
+  }
+}
+
 .scroll-btn {
   position: fixed;
   height: 45px;
@@ -514,6 +560,31 @@ nav {
     font-size: 1.5vw;
     padding: 9px 15px;
   }
+}
+
+/* floating icon  */
+.fab{
+  animation: float 3s ease-in-out infinite; 
+}
+.fa-linkedin-in{
+  animation-delay: 1s;
+}
+.fa-github{
+  animation-delay: 2s;
+}
+@keyframes float {
+  0%{
+      transform: translateY(0); 
+  }
+  50%{
+      transform: translateY(.9375rem); 
+  }
+  100%{
+      transform: translateY(0); 
+  }
+}
+i:hover{
+  animation: none;
 }
 
 /* apps */
