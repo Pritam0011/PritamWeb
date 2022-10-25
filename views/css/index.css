@@ -15,9 +15,9 @@ body {
   overflow-x: hidden !important;
 }
 .blurtog.active{
-  filter: blur(20px);
+  /* filter: blur(1.25rem); */
+  opacity: 0.1;
   pointer-events: none;
-  user-select: none;
 }
 #blur-pop{
   position: fixed;
@@ -55,7 +55,7 @@ body {
 
 @media screen and (max-width:900px) {
   #blur-pop{
-    width: 320px;
+  width: 320px;
   transform: translate(-55%,-50%);
   }
 }
