@@ -1,12 +1,14 @@
 const express = require("express");
 const axios = require("axios");
+require('dotenv').config();
+
 /* Creating a router object. */
 const newsRou = express.Router();
 
 /* This is a route that is used to get the news based on the country. */
 newsRou.get("/", async (req, res) => {
 	try {
-		const apiks=["286e21d0f5d04097b85a8e096078828b","6774a7a88fc0411c996360a4d2bea4a8"]
+		const apiks=process.env.APIS.split(',');
 		const apik = apiks[Math.floor(Math.random()*apiks.length)];
 		var url =
 			"http://newsapi.org/v2/top-headlines?" +
