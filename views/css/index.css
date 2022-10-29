@@ -16,8 +16,8 @@ body {
   background-color: #000 !important;
 }
 .blurtog.active{
-  filter: blur(1.25rem);
-  opacity: 1;
+  /* filter: blur(1.25rem); */
+  opacity: 0.1;
   pointer-events: none;
 }
 #blur-pop{
@@ -58,11 +58,6 @@ body {
   #blur-pop{
   width: 320px;
   transform: translate(-55%,-50%);
-  }
-  .blurtog.active{
-    /* filter: blur(1.25rem); */
-    opacity: 0.1;
-    pointer-events: none;
   }
 }
 
