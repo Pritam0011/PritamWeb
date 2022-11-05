@@ -262,7 +262,13 @@ body {
     display: none;
   }
 }
+/* for loading  */
+.toggle{
+  background: #fff url(../util/close.svg);
+  visibility: hidden;
+}
 .toggle {
+  visibility: visible;
   position: fixed;
   top: 30px;
   right: 30px;
@@ -1204,6 +1210,17 @@ input[type="checkbox"]:checked + label {
   }
   100%{
     background-position: 0;
+  }
+}
+@media screen and (max-width:900px) {
+  .wave{
+  height: 65px;
+  }
+  .wave::after{
+  height: 65px;
+  }
+  .wave::before{
+  height: 65px;
   }
 }
 /* animate */
