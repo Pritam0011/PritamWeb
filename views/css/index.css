@@ -15,12 +15,11 @@ body {
   overflow-x: hidden !important;
   background-color: #000 !important;
 }
-.blurtog.active{
-  /* filter: blur(1.25rem); */
+/* .blurtog.active{
   opacity: 0.1;
   pointer-events: none;
-}
-#blur-pop{
+} */
+/* #blur-pop{
   position: fixed;
   top: 40%;
   left: 50%;
@@ -59,7 +58,7 @@ body {
   width: 320px;
   transform: translate(-55%,-50%);
   }
-}
+} */
 
 .scroll-btn {
   position: fixed;
@@ -93,7 +92,7 @@ body {
   height: 0;
   /* min-height: 508px; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url(../util/header.webP);
+    url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/header.webP);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 56.25%;
@@ -127,7 +126,7 @@ body {
   }
 }
 .logo-box p {
-  background: url(../util/ba.webP);
+  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ba.webP);
   -webkit-background-clip: text;
   background-size: 250%;
   background-position: 0 0;
@@ -264,7 +263,7 @@ body {
 }
 /* for loading  */
 .toggle{
-  background: #fff url(../util/close.svg);
+  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/close.svg);
   visibility: hidden;
 }
 .toggle {
@@ -276,7 +275,7 @@ body {
   height: 35px;
   border-radius: 12px;
   opacity: 40%;
-  background: #fff url(../util/menu.webP);
+  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/menu.webP);
   background-size: 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +283,7 @@ body {
   z-index: 2000;
 }
 .toggle.active {
-  background: #fff url(../util/close.svg);
+  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/close.svg);
   transition: ease-out 0.7s;
   background-size: 25px;
   background-position: center;
@@ -387,7 +386,7 @@ nav {
   position: absolute;
   color: transparent;
   -webkit-text-stroke: 1px rgb(240, 249, 251);
-  background: url(../util/ba.webP);
+  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ba.webP);
   background-size: 250%;
   -webkit-background-clip: text;
   background-position: 0 0;
@@ -499,7 +498,7 @@ nav {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  background: url(../util/pic.webP) center center;
+  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pic.webP) center center;
   background-size: cover;
   border-radius: 100%;
   z-index: 1;
@@ -532,7 +531,7 @@ nav {
     left: 5px;
     right: 5px;
     bottom: 5px;
-    background: url(../util/pic.webP) center center;
+    background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pic.webP) center center;
     background-size: cover;
     border-radius: 100%;
     z-index: 1;
@@ -1142,14 +1141,14 @@ input[type="checkbox"]:checked + label {
   bottom: 0;
   left: 0;
   opacity: 0.2;
-  background: url('../util/wave.png');
+  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
   animation: wave 10s linear infinite;
 }
 .wave::before{
   content: '';
   width: 100%;
   height: 43px;
-  background: url('../util/wave.png');
+  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
   position: absolute;
   top: 0;
   left: 0;
@@ -1160,7 +1159,7 @@ input[type="checkbox"]:checked + label {
   content: '';
   width: 100%;
   height: 43px;
-  background: url('../util/wave.png');
+  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
   position: absolute;
   top: 0;
   left: 0;
@@ -1225,7 +1224,7 @@ input[type="checkbox"]:checked + label {
 }
 /* animate */
 #preloader {
-  background: #000 url(../util/ani.webM) no-repeat center;
+  background: #000 url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ani.webM) no-repeat center;
   background-size: 25%;
   height: 100vh;
   width: 100%;

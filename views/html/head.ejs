@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pritam Web</title>
 
-  <link rel="shortcut icon" href="./util/pw_logo.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pw_logo.ico" type="image/x-icon" />
   <style>
     ::-webkit-scrollbar{
       width: 15px;
@@ -21,8 +21,8 @@
       background-clip: content-box;
       box-shadow: 6px 2px 16px 0px rgba(136, 165, 191, 0.48) , -6px -2px 16px 0px rgba(255, 255, 255, 0.8) ;
     }
-    ::-webkit-scrollbar:hover{
-      width: 20px;
+    ::-webkit-scrollbar-thumb:hover{
+      background: linear-gradient(to top,rgb(244, 213, 13),#d65364,orange);
     }
   </style>
   <link rel="stylesheet" href="css/index.css" />
@@ -33,12 +33,12 @@
 
 <body>
   <div id="preloader"></div>
-  <div id="blur-pop" class="active">
+  <!-- <div id="blur-pop" class="active">
     <h2><b>Important Announcement!</b></h2><p>For making this webpage better and fast, i continuously working on it but nevertheless for using free server and some other reasons, you may suffer sometimes some loading delays. I am really very sorry for this😔😔😔.</p>
     <br>
     <button type="button" class="btn btn-outline-danger" onclick="blurtoggle();">Close</button>
     
-  </div>
+  </div> -->
   <button class="scroll-btn blurtog active" onclick="topFunction()" id="myBtn"><i class="fas fa-angle-up"></i></button>
 
   <%- include("header.ejs") %>
