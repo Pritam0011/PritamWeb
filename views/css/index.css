@@ -15,11 +15,11 @@ body {
   overflow-x: hidden !important;
   background-color: #000 !important;
 }
-/* .blurtog.active{
+.blurtog.active{
   opacity: 0.1;
   pointer-events: none;
-} */
-/* #blur-pop{
+}
+#blur-pop{
   position: fixed;
   top: 40%;
   left: 50%;
@@ -58,7 +58,7 @@ body {
   width: 320px;
   transform: translate(-55%,-50%);
   }
-} */
+}
 
 .scroll-btn {
   position: fixed;
