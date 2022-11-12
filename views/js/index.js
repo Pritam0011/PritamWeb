@@ -160,12 +160,28 @@ function validateForm() {
   }
 }
 
-// Animation
-/* Getting the element with the id of preloader and assigning it to the variable loader. */
-// const loader = document.getElementById("preloader");
-// window.addEventListener("load", function () {
-//   loader.style.display = "none";
-// });
-// function ploff() {
-//   loader.style.display = "none";
-// }
+// image function 
+const pwshareimg=document.getElementById('pwshareimg');
+const newsimg=document.getElementById('newsimg');
+const chatimg=document.getElementById('chatimg');
+const qrimg=document.getElementById('qrimg');
+const noteimg=document.getElementById('noteimg');
+const c2_gif=document.getElementById('c2_gif');
+const c3_gif=document.getElementById('c3_gif');
+setTimeout(function(){
+  pwshareimg.src='https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pwshare.webP';
+  newsimg.src='https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/news.webP';
+  chatimg.src='https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/chat.webP';
+  qrimg.src='https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/qrgen.webP';
+  noteimg.src='https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/notes.webP';
+},2000);
+setTimeout(function(){
+  c1_gif.src='https://github.com/Pritam0011/demo_test2/blob/master/pritam%20web%202/util/c1.webM?raw=true';
+},3000);
+setTimeout(function(){
+  c2_gif.src='https://github.com/Pritam0011/demo_test2/blob/master/pritam%20web%202/util/c2.webM?raw=true';
+},5000);
+setTimeout(function(){
+  c3_gif.src='https://github.com/Pritam0011/demo_test2/blob/master/pritam%20web%202/util/c3.webM?raw=true';
+},6000);
+  
