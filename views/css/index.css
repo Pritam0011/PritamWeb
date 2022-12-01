@@ -4,16 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "Aladin", cursive; */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: "Aladin", cursive; */
 }
 
 body {
-  /* background-color: #fff !important; */
-  overflow-x: hidden !important;
-  background-color: #000 !important;
+	/* background-color: #fff !important; */
+	overflow-x: hidden !important;
+	background-color: #000 !important;
 }
 /* .blurtog.active{
   opacity: 0.1;
@@ -61,1173 +61,1212 @@ body {
 } */
 
 .scroll-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #e91e63;
-  border: 1px solid crimson;
-  right: 30px;
-  bottom: 30px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 10000;
-  font-size: 30px;
-  border-radius: 6px;
-  cursor: pointer;
-  opacity: 0.9;
-  display: none;
-  /* pointer-events: none; */
-  transition: all 0.3s ease;
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: #e91e63;
+	border: 1px solid crimson;
+	right: 30px;
+	bottom: 30px;
+	text-align: center;
+	line-height: 45px;
+	color: #fff;
+	z-index: 10000;
+	font-size: 30px;
+	border-radius: 6px;
+	cursor: pointer;
+	opacity: 0.9;
+	display: none;
+	/* pointer-events: none; */
+	transition: all 0.3s ease;
 }
 .scroll-btn:hover {
-  border: 2px solid yellow;
+	border: 2px solid yellow;
 }
 .scroll-btn:active {
-  background: #bc0240;
-  border: 1px solid rgb(249, 249, 200);
+	background: #bc0240;
+	border: 1px solid rgb(249, 249, 200);
 }
 .header {
-  width: 100%;
-  height: 0;
-  /* min-height: 508px; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
-    url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/header.webP);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 56.25%;
-  position: relative;
+	width: 100%;
+	height: 0;
+	/* min-height: 508px; */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+		url(/header.webP);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 56.25%;
+	position: relative;
 }
 
 .logo-box {
-  font-family: "Nosifer", cursive;
-  color: #fff;
-  position: absolute;
-  margin-left: 32px;
-  padding-top: 1.3rem;
-  position: absolute;
-  margin-top: -56.25%;
-  position: fixed;
-  z-index: 15000;
+	font-family: "Nosifer", cursive;
+	color: #fff;
+	position: absolute;
+	margin-left: 32px;
+	padding-top: 1.3rem;
+	position: absolute;
+	margin-top: -56.25%;
+	position: fixed;
+	z-index: 15000;
 }
 .logo-box p {
-  font-size: 1rem;
-  letter-spacing: 0.2rem;
-  color: transparent;
-  -webkit-text-stroke: 1px rgb(244, 213, 13);
+	font-size: 1rem;
+	letter-spacing: 0.2rem;
+	color: transparent;
+	-webkit-text-stroke: 1px rgb(244, 213, 13);
 }
 @media (max-width: 600px) {
-  .logo-box {
-    margin-left: 20px;
-    padding-top: 1rem;
-  }
-  .logo-box p {
-    font-size: 0.7rem;
-  }
+	.logo-box {
+		margin-left: 20px;
+		padding-top: 1rem;
+	}
+	.logo-box p {
+		font-size: 0.7rem;
+	}
 }
 .logo-box p {
-  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ba.webP);
-  -webkit-background-clip: text;
-  background-size: 250%;
-  background-position: 0 0;
-  animation: ba 70s alternate-reverse infinite;
+	background: url(/ba.webP);
+	-webkit-background-clip: text;
+	background-size: 250%;
+	background-position: 0 0;
+	animation: ba 70s alternate-reverse infinite;
 }
 
 @keyframes ba {
-  100% {
-    background-position: 1000px 0;
-  }
+	100% {
+		background-position: 1000px 0;
+	}
 }
 
 .star {
-  margin-top: -58%;
-  position: absolute;
-  top: -55%;
-  left: 0%;
-  height: 1.5px;
-  background: linear-gradient(-45deg, #699bff, rgba(0, 0, 255, 0));
-  filter: drop-shadow(0 0 6px #699bff);
-  animation: tail 1s ease-in-out 1s, shooting 1s ease-in-out 1s;
+	margin-top: -58%;
+	position: absolute;
+	top: -55%;
+	left: 0%;
+	height: 1.5px;
+	background: linear-gradient(-45deg, #699bff, rgba(0, 0, 255, 0));
+	filter: drop-shadow(0 0 6px #699bff);
+	animation: tail 1s ease-in-out 1s, shooting 1s ease-in-out 1s;
 }
 .star::before {
-  position: absolute;
-  content: "";
-  background: linear-gradient(90deg, rgba(0, 0, 255, 0)), #5f91ff,
-    rgba(0, 0, 255, 0);
-  top: 50%;
-  transform: translateY(-50%);
-  height: 1px;
-  width: 100px;
+	position: absolute;
+	content: "";
+	background: linear-gradient(90deg, rgba(0, 0, 255, 0)), #5f91ff,
+		rgba(0, 0, 255, 0);
+	top: 50%;
+	transform: translateY(-50%);
+	height: 1px;
+	width: 100px;
 }
 .star:nth-child(1) {
-  top: -15%;
-  left: 30%;
-  animation-delay: 11s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 30%;
+	animation-delay: 11s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(2) {
-  top: -15%;
-  left: 60%;
-  animation-delay: 22s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 60%;
+	animation-delay: 22s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(3) {
-  top: -15%;
-  left: 89%;
-  animation-delay: 35s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 89%;
+	animation-delay: 35s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(4) {
-  top: -15%;
-  left: 45%;
-  animation-delay: 40s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 45%;
+	animation-delay: 40s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(5) {
-  top: -15%;
-  left: 85%;
-  animation-delay: 48s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 85%;
+	animation-delay: 48s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(6) {
-  top: -15%;
-  right: 15%;
-  animation-delay: 61s;
-  animation-duration: 0.9s;
+	top: -15%;
+	right: 15%;
+	animation-delay: 61s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(7) {
-  top: -15%;
-  left: 90%;
-  animation-delay: 77s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 90%;
+	animation-delay: 77s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(8) {
-  top: -15%;
-  right: 31%;
-  animation-delay: 90s;
-  animation-duration: 0.9s;
+	top: -15%;
+	right: 31%;
+	animation-delay: 90s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(9) {
-  top: -15%;
-  left: 55%;
-  animation-delay: 110s;
-  animation-duration: 0.9s;
+	top: -15%;
+	left: 55%;
+	animation-delay: 110s;
+	animation-duration: 0.9s;
 }
 .star:nth-child(10) {
-  top: -15%;
-  right: 75%;
-  animation-delay: 140s;
-  animation-duration: 0.9s;
+	top: -15%;
+	right: 75%;
+	animation-delay: 140s;
+	animation-duration: 0.9s;
 }
 
 @keyframes tail {
-  0% {
-    width: 0;
-  }
-  30% {
-    width: 60px;
-  }
-  100% {
-    width: 0;
-  }
+	0% {
+		width: 0;
+	}
+	30% {
+		width: 60px;
+	}
+	100% {
+		width: 0;
+	}
 }
 @keyframes shining {
-  0% {
-    width: 0;
-  }
-  30% {
-    width: 30px;
-  }
-  100% {
-    width: 0;
-  }
+	0% {
+		width: 0;
+	}
+	30% {
+		width: 30px;
+	}
+	100% {
+		width: 0;
+	}
 }
 @keyframes shooting {
-  0% {
-    transform: rotate(340deg) translateX(0);
-    opacity: 0;
-  }
-  45% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(340deg) translateX(-400px);
-  }
+	0% {
+		transform: rotate(340deg) translateX(0);
+		opacity: 0;
+	}
+	45% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(340deg) translateX(-400px);
+	}
 }
 @media (max-width: 1130px) {
-  .star {
-    /* visibility:hidden; */
-    display: none;
-  }
+	.star {
+		/* visibility:hidden; */
+		display: none;
+	}
 }
-/* for loading  */
-.toggle{
-  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/close.svg);
-  visibility: hidden;
-}
+
 .toggle {
-  visibility: visible;
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  width: 40px;
-  height: 35px;
-  border-radius: 12px;
-  opacity: 40%;
-  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/menu.webP);
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  z-index: 2000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	cursor: pointer;
+	top: 30px;
+	right: 30px;
+	width: 45px;
+	height: 45px;
+	z-index: 2000;
+	transition: all 0.5s ease-in-out;
 }
-.toggle.active {
-  background: #fff url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/close.svg);
-  transition: ease-out 0.7s;
-  background-size: 25px;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+.menu-btn {
+	width: 90%;
+	height: 5px;
+	background: rgb(186, 184, 160);
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
 }
-.toggle:hover {
-  opacity: 65%;
-  background-color: rgb(255, 247, 135);
-  border: 1px solid rgb(22, 1, 1);
-  box-shadow: 0 0 30px rgb(244, 240, 240);
+.menu-btn::before,
+.menu-btn::after {
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 5px;
+	background: rgb(186, 184, 160);
+	border-radius: 5px;
+	transition: all 0.5s ease-in-out;
+}
+
+.menu-btn::before {
+	transform: translateY(-10px);
+}
+
+.menu-btn::after {
+	transform: translateY(10px);
+}
+
+.toggle.active .menu-btn {
+	transform: translateX(-50px);
+	background: transparent;
+	box-shadow: none;
+}
+
+.toggle.active .menu-btn::before {
+	transform: rotate(45deg) translate(35px, -35px);
+}
+
+.toggle.active .menu-btn::after {
+	transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.toggle:hover .menu-btn {
+	background-color: rgb(255, 247, 135);
+	border: 0.1px solid rgb(22, 1, 1);
+	box-shadow: 0 0 30px rgb(244, 240, 240);
+}
+.toggle:hover .menu-btn::before {
+	background-color: rgb(255, 247, 135);
+	border: 0.1px solid rgb(22, 1, 1);
+	box-shadow: 0 0 30px rgb(244, 240, 240);
+}
+.toggle:hover .menu-btn::after {
+	background-color: rgb(255, 247, 135);
+	border: 0.1px solid rgb(22, 1, 1);
+	box-shadow: 0 0 30px rgb(244, 240, 240);
+}
+.toggle:hover.active .menu-btn {
+	background: none;
+	border: none;
+	box-shadow: none;
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100% - 900px);
-  height: 100%;
-  display: flex;
-  padding: 100px;
-  background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  padding: 40px;
-  z-index: 1500;
-  right: -100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: calc(100% - 900px);
+	height: 100%;
+	display: flex;
+	padding: 100px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+	padding: 40px;
+	z-index: 1500;
+	right: -100%;
 }
 .sidebar.active {
-  right: 0;
+	right: 0;
 }
 .sidebar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .sidebar ul li {
-  list-style: none;
-  padding-top: 1rem;
+	list-style: none;
+	padding-top: 1rem;
 }
 .sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  margin: 10px 0;
-  font-weight: 300;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-family: "Aladin", cursive;
-  position: relative;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	margin: 10px 0;
+	font-weight: 300;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-family: "Aladin", cursive;
+	position: relative;
 }
 .sidebar ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  border-radius: 5rem;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgb(233, 4, 4);
-  transition: width 0.3s;
+	content: "";
+	width: 0;
+	height: 3px;
+	border-radius: 5rem;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgb(233, 4, 4);
+	transition: width 0.3s;
 }
 .sidebar ul li a:hover::after {
-  width: 50%;
+	width: 50%;
 }
 .sidebar ul li a:hover {
-  color: yellow;
+	color: yellow;
 }
 
 @media (max-width: 1150px) {
-  .sidebar {
-    width: 52%;
-  }
+	.sidebar {
+		width: 52%;
+	}
 }
 @media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
-  }
+	.sidebar {
+		width: 100%;
+	}
 }
 nav {
-  position: relative;
-  top: -0.5%;
+	position: relative;
+	top: -0.5%;
 }
 .outline {
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 /* auto typing */
 .text-box {
-  font-family: "Aladin", cursive;
-  right: 15%;
-  /* margin-top: 34%; */
-  letter-spacing: 2px;
-  line-height: 26px;
-  position: absolute;
-  color: transparent;
-  -webkit-text-stroke: 1px rgb(240, 249, 251);
-  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ba.webP);
-  background-size: 250%;
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  margin-top: -26.25%;
+	font-family: "Aladin", cursive;
+	right: 15%;
+	/* margin-top: 34%; */
+	letter-spacing: 2px;
+	line-height: 26px;
+	position: absolute;
+	color: transparent;
+	-webkit-text-stroke: 1px rgb(240, 249, 251);
+	background: url(/ba.webP);
+	background-size: 250%;
+	-webkit-background-clip: text;
+	background-position: 0 0;
+	margin-top: -26.25%;
 }
 .type {
-  font-size: 4vw;
-  line-height: 160px;
+	font-size: 4vw;
+	line-height: 160px;
 }
 /* .typed-cursor {
   font-size: 5vw;
 } */
 .typeab {
-  color: #d65364;
+	color: #d65364;
 }
 /* about */
 .ab-sec {
-  width: 100%;
-  /* padding: 8vw 0vw; */
-  padding-top: 6vw;
-  padding-left: 0vw;
-  padding-right: 0vw;
-  padding-bottom: 2vw;
-  background-color: #000;
+	width: 100%;
+	/* padding: 8vw 0vw; */
+	padding-top: 6vw;
+	padding-left: 0vw;
+	padding-right: 0vw;
+	padding-bottom: 2vw;
+	background-color: #000;
 }
 .ab-title {
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
 }
 
 .ab-text {
-  width: 46vw;
-  margin-left: 7vw;
+	width: 46vw;
+	margin-left: 7vw;
 }
 .ab-text h2 {
-  color: yellow;
-  font-size: 6vw;
-  text-transform: capitalize;
-  margin-bottom: 5vw;
-  font-weight: bolder;
+	color: yellow;
+	font-size: 6vw;
+	text-transform: capitalize;
+	margin-bottom: 5vw;
+	font-weight: bolder;
 }
 .ab-text h2 span {
-  color: #d65364;
+	color: #d65364;
 }
 .ab-text h5 {
-  color: rgb(222, 188, 15);
-  letter-spacing: 0.5vw;
-  font-size: 2vw;
-  margin-bottom: 1vw;
-  text-transform: capitalize;
-  font-weight: bolder;
+	color: rgb(222, 188, 15);
+	letter-spacing: 0.5vw;
+	font-size: 2vw;
+	margin-bottom: 1vw;
+	text-transform: capitalize;
+	font-weight: bolder;
 }
 .ab-text p {
-  color: white;
-  letter-spacing: 0.1vw;
-  font-size: 1.5vw;
-  margin-bottom: 2vw;
-  font-family: "Poppins", sans-serif;
+	color: white;
+	letter-spacing: 0.1vw;
+	font-size: 1.5vw;
+	margin-bottom: 2vw;
+	font-family: "Poppins", sans-serif;
 }
 
 .main {
-  width: 100vw;
-  max-width: 95%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* grid-template-rows: auto auto; */
+	width: 100vw;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* grid-template-rows: auto auto; */
 }
 .picd {
-  text-align: center;
-  padding: 2em 0;
+	text-align: center;
+	padding: 2em 0;
 }
 #pic {
-  transition-duration: 0.3s;
-  background: red;
-  position: relative;
-  margin: auto;
-  border-radius: 100%;
-  width: 26vw;
-  height: 26vw;
-  top: 50%;
-  background: linear-gradient(to right, rgb(249, 249, 150), #d65364);
-  overflow: hidden;
-  z-index: 2;
-  box-shadow: 0 0 5px #444;
+	transition-duration: 0.3s;
+	background: red;
+	position: relative;
+	margin: auto;
+	border-radius: 100%;
+	width: 26vw;
+	height: 26vw;
+	top: 50%;
+	background: linear-gradient(to right, rgb(249, 249, 150), #d65364);
+	overflow: hidden;
+	z-index: 2;
+	box-shadow: 0 0 5px #444;
 }
 #pic:hover {
-  box-shadow: 0 0 25px rgb(244, 240, 240);
-  transform: rotate(360deg);
+	box-shadow: 0 0 25px rgb(244, 240, 240);
+	transform: rotate(360deg);
 }
 #pic:hover:after {
-  top: 15px;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  transform: rotate(-360deg);
+	top: 15px;
+	bottom: 15px;
+	left: 15px;
+	right: 15px;
+	transform: rotate(-360deg);
 }
 #pic img {
-  width: 100%;
+	width: 100%;
 }
 #pic:after {
-  transition-duration: 0.3s;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pic.webP) center center;
-  background-size: cover;
-  border-radius: 100%;
-  z-index: 1;
+	transition-duration: 0.3s;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: url(/pic.webP) center center;
+	background-size: cover;
+	border-radius: 100%;
+	z-index: 1;
 }
 @media (max-width: 685px) {
-  #pic {
-    /* top: 30%; */
-    margin-bottom: 100%;
-  }
-  #pic:hover {
-    box-shadow: 0 0 25px rgb(244, 240, 240);
-    transform: rotate(360deg);
-  }
-  #pic:hover:after {
-    top: 7px;
-    bottom: 7px;
-    left: 7px;
-    right: 7px;
-    transform: rotate(-360deg);
-  }
-  #pic img {
-    width: 100%;
-  }
-  #pic:after {
-    transition-duration: 0.3s;
-    content: "";
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background: url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/pic.webP) center center;
-    background-size: cover;
-    border-radius: 100%;
-    z-index: 1;
-  }
+	#pic {
+		/* top: 30%; */
+		margin-bottom: 100%;
+	}
+	#pic:hover {
+		box-shadow: 0 0 25px rgb(244, 240, 240);
+		transform: rotate(360deg);
+	}
+	#pic:hover:after {
+		top: 7px;
+		bottom: 7px;
+		left: 7px;
+		right: 7px;
+		transform: rotate(-360deg);
+	}
+	#pic img {
+		width: 100%;
+	}
+	#pic:after {
+		transition-duration: 0.3s;
+		content: "";
+		display: block;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 5px;
+		bottom: 5px;
+		background: url(/pic.webP) center center;
+		background-size: cover;
+		border-radius: 100%;
+		z-index: 1;
+	}
 }
 
 @media (max-width: 500px) {
-  #pic {
-    padding-bottom: 120px;
-    padding-left: 120px;
-  }
+	#pic {
+		padding-bottom: 120px;
+		padding-left: 120px;
+	}
 }
 
 /* download cv  */
 .download-btn a {
-  background: none;
-  padding: 13px 22px;
-  text-decoration: none;
-  font-size: 1.7vw;
-  color: crimson;
-  border-radius: 6px;
-  border: 2px solid crimson;
-  font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
+	background: none;
+	padding: 13px 22px;
+	text-decoration: none;
+	font-size: 1.7vw;
+	color: crimson;
+	border-radius: 6px;
+	border: 2px solid crimson;
+	font-family: "Poppins", sans-serif;
+	transition: all 0.3s ease;
 }
 .download-btn a:hover {
-  color: #ffffff;
-  background: crimson;
+	color: #ffffff;
+	background: crimson;
 }
 @media screen and (max-width: 600px) {
-  .download-btn a {
-    font-size: 1.5vw;
-    padding: 9px 15px;
-  }
+	.download-btn a {
+		font-size: 1.5vw;
+		padding: 9px 15px;
+	}
 }
 
 /* floating icon  */
-.fab{
-  animation: float 3s ease-in-out infinite; 
+.fab {
+	animation: float 3s ease-in-out infinite;
 }
-.fa-linkedin-in{
-  animation-delay: 1s;
+.fa-linkedin-in {
+	animation-delay: 1s;
 }
-.fa-github{
-  animation-delay: 2s;
+.fa-github {
+	animation-delay: 2s;
 }
 @keyframes float {
-  0%{
-      transform: translateY(0); 
-  }
-  50%{
-      transform: translateY(.9375rem); 
-  }
-  100%{
-      transform: translateY(0); 
-  }
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(0.9375rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
-i:hover{
-  animation: none;
+i:hover {
+	animation: none;
 }
 
 /* apps */
 #app {
-  width: 100%;
-  height: 100%;
-  /* padding: 10vh; */
-  background-color: white;
-  padding-bottom: 2vh;
-  /* font-family: "Poppins", sans-serif; */
+	width: 100%;
+	height: 100%;
+	/* padding: 10vh; */
+	background-color: white;
+	padding-bottom: 2vh;
+	/* font-family: "Poppins", sans-serif; */
 }
 .app-title {
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
-  padding: 0 30px 30px;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	padding: 0 30px 30px;
 }
 .app-title h1 {
-  position: relative;
-  color: rgb(240, 240, 6);
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
+	position: relative;
+	color: rgb(240, 240, 6);
+	font-size: 1.8rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
 }
 .app-title h1::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -12px;
-  width: 60px;
-  height: 2px;
-  background-color: red;
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -12px;
+	width: 60px;
+	height: 2px;
+	background-color: red;
 }
 
 .app .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .app .content .appbx {
-  padding: 40px 20px;
-  border-radius: 20px;
-  max-width: 340px;
-  margin: 20px;
-  transition: 0.5s;
-  text-align: center;
-  /* background: #f5f5f5; */
-  background: rgb(232, 232, 249);
+	padding: 40px 20px;
+	border-radius: 20px;
+	max-width: 340px;
+	margin: 20px;
+	transition: 0.5s;
+	text-align: center;
+	/* background: #f5f5f5; */
+	background: rgb(232, 232, 249);
 }
 .app .content .appbx:hover {
-  background: #000;
+	background: #000;
 }
 .app .content .appbx img {
-  max-width: 80px;
-  transition: 0.5s;
+	max-width: 80px;
+	transition: 0.5s;
 }
 .app .content .appbx:hover img {
-  filter: invert(1);
+	filter: invert(1);
 }
 .app .content .appbx h2 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  letter-spacing: 1.5px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: 0.5s;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	letter-spacing: 1.5px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: 0.5s;
 }
 .app .content .appbx:hover h2 {
-  color: #fff;
+	color: #fff;
 }
 .app .content .appbx p {
-  margin: 0;
-  transition: 0.5s;
+	margin: 0;
+	transition: 0.5s;
 }
 .app .content .appbx:hover p {
-  color: white;
+	color: white;
 }
 /* button  */
 .buttonjd {
-  padding-top: 25px;
+	padding-top: 25px;
 }
 .buttonj {
-  display: inline-block;
-  font-size: 1em;
-  padding: 1em 1.3em;
-  font-family: Gill Sans, "Gill Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 3em;
-  border: solid 2px #232323;
-  color: #232323;
-  border-radius: 0.4em;
-  transition: all 0.3s linear;
-  animation-iteration-count: infinite;
+	display: inline-block;
+	font-size: 1em;
+	padding: 1em 1.3em;
+	font-family: Gill Sans, "Gill Sans", sans-serif;
+	font-weight: 700;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-top: 3em;
+	border: solid 2px #232323;
+	color: #232323;
+	border-radius: 0.4em;
+	transition: all 0.3s linear;
+	animation-iteration-count: infinite;
 }
 .buttonj:hover {
-  color: #ffffff;
-  background: #232323;
-  animation: none;
+	color: #ffffff;
+	background: #232323;
+	animation: none;
 }
 .buttonju {
-  animation-duration: 0.75s;
-  animation-name: jump;
+	animation-duration: 0.75s;
+	animation-name: jump;
 }
 .app .content .appbx:hover a {
-  filter: invert(1);
+	filter: invert(1);
 }
 @keyframes jump {
-  0% {
-    transform: scale(1, 1) translate(0px, 0px);
-  }
-  30% {
-    transform: scale(1, 0.8) translate(0px, 10px);
-  }
-  75% {
-    transform: scale(1, 1.1) translate(0px, -25px);
-  }
-  100% {
-    transform: scale(1, 1) translate(0px, 0px);
-  }
+	0% {
+		transform: scale(1, 1) translate(0px, 0px);
+	}
+	30% {
+		transform: scale(1, 0.8) translate(0px, 10px);
+	}
+	75% {
+		transform: scale(1, 1.1) translate(0px, -25px);
+	}
+	100% {
+		transform: scale(1, 1) translate(0px, 0px);
+	}
 }
 /* contact  */
 
 .con-sec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  width: 100%;
-  background-color: #001923;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 20px;
+	width: 100%;
+	background-color: #001923;
 }
 .con-sec::before {
-  content: "";
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(#ffab3b, #e91e63);
-  border-radius: 50%;
-  transform: translate(-420px, -180px);
+	content: "";
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	background: linear-gradient(#ffab3b, #e91e63);
+	border-radius: 50%;
+	transform: translate(-420px, -180px);
 }
 .con-sec::after {
-  content: "";
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background: linear-gradient(#e91e63, #ffab3b);
-  border-radius: 50%;
-  transform: translate(400px, 180px);
+	content: "";
+	position: absolute;
+	width: 350px;
+	height: 350px;
+	background: linear-gradient(#e91e63, #ffab3b);
+	border-radius: 50%;
+	transform: translate(400px, 180px);
 }
 .contactn {
-  position: relative;
-  z-index: 1000;
-  width: 100%;
-  max-width: 1000px;
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  backdrop-filter: blur(25px);
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	max-width: 1000px;
+	padding: 50px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	backdrop-filter: blur(25px);
 }
 .contactn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -40%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
-  transform: skewX(-15deg);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -40%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.05);
+	pointer-events: none;
+	transform: skewX(-15deg);
 }
 .contactn h2 {
-  width: 100%;
-  text-align: center;
-  color: yellow;
-  font-size: 36px;
-  margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	color: yellow;
+	font-size: 36px;
+	margin-bottom: 20px;
 }
 .contactn .rowf {
-  position: relative;
-  width: 100%;
-  display: grid;
+	position: relative;
+	width: 100%;
+	display: grid;
 }
 
 input:focus ~ label,
 textarea:focus ~ label,
 input:valid ~ label,
 textarea:valid ~ label {
-  font-size: 0.75em;
-  color: #999;
-  top: -5px;
-  -webkit-transition: all 0.225s ease;
-  transition: all 0.225s ease;
+	font-size: 0.75em;
+	color: #999;
+	top: -5px;
+	-webkit-transition: all 0.225s ease;
+	transition: all 0.225s ease;
 }
 
 .styled-input {
-  float: left;
-  width: 293px;
-  margin: 1rem 0;
-  position: relative;
-  border-radius: 4px;
+	float: left;
+	width: 293px;
+	margin: 1rem 0;
+	position: relative;
+	border-radius: 4px;
 }
 
 @media only screen and (max-width: 768px) {
-  .styled-input {
-    width: 100%;
-  }
+	.styled-input {
+		width: 100%;
+	}
 }
 
 .styled-input label {
-  color: #999;
-  padding: 1.3rem 30px 1rem 30px;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  pointer-events: none;
+	color: #999;
+	padding: 1.3rem 30px 1rem 30px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	-webkit-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	pointer-events: none;
 }
 
 .styled-input.wide {
-  width: 650px;
-  max-width: 100%;
+	width: 650px;
+	max-width: 100%;
 }
 
 input,
 textarea {
-  padding: 30px;
-  border: 0;
-  width: 100%;
-  font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
-  border-radius: 4px;
+	padding: 30px;
+	border: 0;
+	width: 100%;
+	font-size: 1rem;
+	background-color: #2d2d2d;
+	color: white;
+	border-radius: 4px;
 }
 
 input:focus,
 textarea:focus {
-  outline: 0;
+	outline: 0;
 }
 
 input:focus ~ span,
 textarea:focus ~ span {
-  width: 100%;
-  -webkit-transition: all 0.075s ease;
-  transition: all 0.075s ease;
+	width: 100%;
+	-webkit-transition: all 0.075s ease;
+	transition: all 0.075s ease;
 }
 
 textarea {
-  width: 100%;
-  min-height: 15em;
+	width: 100%;
+	min-height: 15em;
 }
 
 .input-container {
-  width: 650px;
-  max-width: 100%;
-  margin: 20px auto 25px auto;
+	width: 650px;
+	max-width: 100%;
+	margin: 20px auto 25px auto;
 }
 
 .submit-btnn {
-  float: right;
-  padding: 7px 35px;
-  border-radius: 60px;
-  display: inline-block;
-  background-color: #4b8cfb;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(14, 146, 240, 0.06),
-    0 2px 10px 0 rgba(14, 146, 240, 0.07);
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+	float: right;
+	padding: 7px 35px;
+	border-radius: 60px;
+	display: inline-block;
+	background-color: #4b8cfb;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px 0 rgba(14, 146, 240, 0.06),
+		0 2px 10px 0 rgba(14, 146, 240, 0.07);
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease;
 }
 
 .submit-btnn:hover {
-  transform: translateY(1px);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+	transform: translateY(1px);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
 
 @media (max-width: 768px) {
-  .submit-btnn {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
+	.submit-btnn {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
 }
 
 input[type="checkbox"] + label {
-  color: #ccc;
-  font-style: italic;
+	color: #ccc;
+	font-style: italic;
 }
 
 input[type="checkbox"]:checked + label {
-  color: #f00;
-  font-style: normal;
+	color: #f00;
+	font-style: normal;
 }
 @media (max-width: 768px) {
-  .con-sec::before {
-    transform: translate(-200px, -180px);
-  }
-  .contactn {
-    padding: 20px;
-  }
-  .contactn h2 {
-    font-size: 28px;
-  }
-  .scroll-btn {
-    right: 10px;
-  }
+	.con-sec::before {
+		transform: translate(-200px, -180px);
+	}
+	.contactn {
+		padding: 20px;
+	}
+	.contactn h2 {
+		font-size: 28px;
+	}
+	.scroll-btn {
+		right: 10px;
+	}
 }
 @media (max-width: 1160px) {
-  .con-sec::after {
-    transform: translate(120px, 180px);
-  }
+	.con-sec::after {
+		transform: translate(120px, 180px);
+	}
 }
 @media (max-width: 591px) {
-  .con-sec::after {
-    transform: translate(10px, 180px);
-  }
+	.con-sec::after {
+		transform: translate(10px, 180px);
+	}
 }
 @media (max-width: 373px) {
-  .con-sec::after {
-    transform: translate(-70px, 220px);
-  }
+	.con-sec::after {
+		transform: translate(-70px, 220px);
+	}
 }
 
 #contact {
-  width: 100%;
-  height: 100%;
-  padding: 10vh;
-  background-color: #001923;
-  padding-bottom: 2vh;
+	width: 100%;
+	height: 100%;
+	padding: 10vh;
+	background-color: #001923;
+	padding-bottom: 2vh;
 }
 .con-title {
-  width: 100%;
-  text-align: center;
-  font-weight: bolder;
-  padding: 0 30px 0;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	padding: 0 30px 0;
 }
 .con-title h2 {
-  position: relative;
-  color: rgb(240, 240, 6);
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
+	position: relative;
+	color: rgb(240, 240, 6);
+	font-size: 1.8rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
 }
 .con-title h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -12px;
-  width: 70px;
-  height: 2px;
-  background-color: red;
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -12px;
+	width: 70px;
+	height: 2px;
+	background-color: red;
 }
 
 .send-text {
-  margin-top: 10px;
-  font: 700 12px "Lato", sans-serif;
-  letter-spacing: 2px;
+	margin-top: 10px;
+	font: 700 12px "Lato", sans-serif;
+	letter-spacing: 2px;
 }
 #submit:hover .send-text {
-  color: yellow;
+	color: yellow;
 }
 #submit:hover {
-  border: solid yellow;
+	border: solid yellow;
 }
 .submit-btnn:active {
-  background-color: #0d61f1;
+	background-color: #0d61f1;
 }
 
 .input-group span {
-  font-size: 16px;
-  color: red;
+	font-size: 16px;
+	color: red;
 }
 #submit-error {
-  color: red;
+	color: red;
 }
 .input-group span i {
-  color: seagreen;
+	color: seagreen;
 }
 
 /* social */
 #social {
-  width: 100%;
-  height: 100%;
-  background-color: #f5f5f5;
+	width: 100%;
+	height: 100%;
+	background-color: #f5f5f5;
 }
 .caps a {
-  text-decoration: none;
+	text-decoration: none;
 }
 .caps p {
-  font-size: 2vw;
-  font-family: "Russo One", sans-serif;
-  color: rgb(255, 63, 63);
+	font-size: 2vw;
+	font-family: "Russo One", sans-serif;
+	color: rgb(255, 63, 63);
 }
 
 .container-social {
-  background-color: #000;
-  padding: 5px 35px 35px 0;
-  overflow: hidden;
-  width: 100%;
+	background-color: #000;
+	padding: 5px 35px 35px 0;
+	overflow: hidden;
+	width: 100%;
 }
 
 .social-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: -10px;
-  float: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: -10px;
+	float: right;
 }
 .social-buttons__button {
-  margin: 10px 5px 0;
+	margin: 10px 5px 0;
 }
 
 .social-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  width: 70px;
-  height: 70px;
-  text-decoration: none;
-  border-radius: 100%;
-  background: #000;
-  text-align: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	width: 70px;
+	height: 70px;
+	text-decoration: none;
+	border-radius: 100%;
+	background: #000;
+	text-align: center;
 }
 @media (max-width: 610px) {
-  .social-button {
-    width: 40px;
-    height: 40px;
-  }
-  .social-button i {
-    font-size: 20px;
-  }
+	.social-button {
+		width: 40px;
+		height: 40px;
+	}
+	.social-button i {
+		font-size: 20px;
+	}
 }
 .social-button::after {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 100%;
-  transition: 0.3s;
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: 50%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+	transition: 0.3s;
 }
 .social-button:focus,
 .social-button:hover {
-  color: #fff;
+	color: #fff;
 }
 .social-button:focus::after,
 .social-button:hover::after {
-  width: calc(100% + 2px);
-  height: calc(100% + 2px);
-  margin-left: calc(-50% - 1px);
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	margin-left: calc(-50% - 1px);
 }
 .social-button i,
 .social-button svg {
-  position: relative;
-  z-index: 1;
-  transition: 0.3s;
+	position: relative;
+	z-index: 1;
+	transition: 0.3s;
 }
 .social-button i {
-  font-size: 28px;
+	font-size: 28px;
 }
 .social-button svg {
-  height: 40%;
-  width: 40%;
+	height: 40%;
+	width: 40%;
 }
 .social-button--mail {
-  color: #0072c6;
+	color: #0072c6;
 }
 .social-button--mail::after {
-  background: #0072c6;
+	background: #0072c6;
 }
 .social-button--facebook {
-  color: #3b5999;
+	color: #3b5999;
 }
 .social-button--facebook::after {
-  background: #3b5999;
+	background: #3b5999;
 }
 .social-button--linkedin {
-  color: #0077b5;
+	color: #0077b5;
 }
 .social-button--linkedin::after {
-  background: #0077b5;
+	background: #0077b5;
 }
 .social-button--github {
-  color: #6e5494;
+	color: #6e5494;
 }
 .social-button--github::after {
-  background: #6e5494;
+	background: #6e5494;
 }
 .social-button--codepen {
-  color: #212121;
+	color: #212121;
 }
 .social-button--codepen::after {
-  background: #212121;
+	background: #212121;
 }
 .social-button--steam {
-  color: #7da10e;
+	color: #7da10e;
 }
 .social-button--steam::after {
-  background: #7da10e;
+	background: #7da10e;
 }
 .social-button--snapchat {
-  color: #eec900;
+	color: #eec900;
 }
 .social-button--snapchat::after {
-  background: #eec900;
+	background: #eec900;
 }
 .social-button--twitter {
-  color: #55acee;
+	color: #55acee;
 }
 .social-button--twitter::after {
-  background: #55acee;
+	background: #55acee;
 }
 .social-button--instagram {
-  color: #e4405f;
+	color: #e4405f;
 }
 .social-button--instagram::after {
-  background: #e4405f;
+	background: #e4405f;
 }
 .social-button--npmjs {
-  color: #c12127;
+	color: #c12127;
 }
 .social-button--npmjs::after {
-  background: #c12127;
+	background: #c12127;
 }
 
 /* footer  */
-.wave{
-  position: absolute;
-  width: 100%;
-  height: 43px;
-  bottom: 0;
-  left: 0;
-  opacity: 0.2;
-  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
-  animation: wave 10s linear infinite;
+.wave {
+	position: absolute;
+	width: 100%;
+	height: 43px;
+	bottom: 0;
+	left: 0;
+	opacity: 0.2;
+	background: url("/wave.png");
+	animation: wave 10s linear infinite;
 }
-.wave::before{
-  content: '';
-  width: 100%;
-  height: 43px;
-  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
-  animation: wave-re 8s linear infinite;
+.wave::before {
+	content: "";
+	width: 100%;
+	height: 43px;
+	background: url("/wave.png");
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	animation: wave-re 8s linear infinite;
 }
-.wave::after{
-  content: '';
-  width: 100%;
-  height: 43px;
-  background: url('https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/wave.png');
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.8;
-  animation: wave-re 12s alternate-reverse infinite;
+.wave::after {
+	content: "";
+	width: 100%;
+	height: 43px;
+	background: url("/wave.png");
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	animation: wave-re 12s alternate-reverse infinite;
 }
 .ab-title h1 {
-  position: relative;
-  color: yellow;
-  font-size: 1.8rem;
-  font-weight: bolder;
-  letter-spacing: 1px;
+	position: relative;
+	color: yellow;
+	font-size: 1.8rem;
+	font-weight: bolder;
+	letter-spacing: 1px;
 }
 .ab-title h1::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -12px;
-  width: 60px;
-  height: 2px;
-  background-color: red;
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -12px;
+	width: 60px;
+	height: 2px;
+	background-color: red;
 }
 .copyright {
-  position: relative;
-  color: yellow;
-  background: #000;
-  text-align: center;
-  padding: 10px;
-  /* border-top: 1px solid yellow; */
+	position: relative;
+	color: yellow;
+	background: #000;
+	text-align: center;
+	padding: 10px;
+	/* border-top: 1px solid yellow; */
 }
 .copyright p {
-  margin: 0;
-  font-size: 15px;
+	margin: 0;
+	font-size: 15px;
 }
 @keyframes wave {
-  0%{
-    background-position: 0;
-  }
-  100%{
-    background-position: 85rem;
-  }
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 85rem;
+	}
 }
 @keyframes wave-re {
-  0%{
-    background-position: 85rem;
-  }
-  100%{
-    background-position: 0;
-  }
+	0% {
+		background-position: 85rem;
+	}
+	100% {
+		background-position: 0;
+	}
 }
-@media screen and (max-width:900px) {
-  .wave{
-  height: 65px;
-  }
-  .wave::after{
-  height: 65px;
-  }
-  .wave::before{
-  height: 65px;
-  }
+@media screen and (max-width: 900px) {
+	.wave {
+		height: 65px;
+	}
+	.wave::after {
+		height: 65px;
+	}
+	.wave::before {
+		height: 65px;
+	}
 }
 /* animate */
 #preloader {
-  background: #000 url(https://raw.githubusercontent.com/Pritam0011/demo_test2/master/pritam%20web%202/util/ani.webM) no-repeat center;
-  background-size: 25%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 20001;
+	background: #000 url(/ani.webM) no-repeat center;
+	background-size: 25%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 20001;
 }
